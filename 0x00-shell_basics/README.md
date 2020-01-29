@@ -1,1 +1,1 @@
-it is script to path directory
+ path name of the current working directory
