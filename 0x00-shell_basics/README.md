@@ -1,0 +1,1 @@
+it is script to path directory
