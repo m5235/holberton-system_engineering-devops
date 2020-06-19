@@ -11,5 +11,5 @@ while ((i <= 20)); do
 		17) 
 			echo "bad luck from Italy";;
 	esac
-	((n++))
+	((i++))
 done
