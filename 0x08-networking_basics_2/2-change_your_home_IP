@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+#configures an Ubuntu 
+cp /etc/hosts ~/hosts.new
+sed -i s/127.0.0.1/ ~/hosts.new
+cp -f ~/hosts.new /etc/hosts
