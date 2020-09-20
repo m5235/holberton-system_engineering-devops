@@ -11,3 +11,11 @@
 * Pythonic Function name style
 * Pythonic Constant name style
 * Significance of CapWords or CamelCase in Python
+
+
+| HTTP method | CRUD | Action |
+| ----------- | ---- | ------ |
+|GET          | read |returns requested data|
+|POST         |create|creates a new record|
+|PUT or PATCH |update|updates an existing record|
+|DELETE	      |delete|deletes an existing record|
