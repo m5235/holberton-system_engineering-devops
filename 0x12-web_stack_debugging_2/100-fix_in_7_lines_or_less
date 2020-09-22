@@ -2,6 +2,6 @@
 #user nginex
 pkill apache2
 chmod 644 /etc/nginx/nginx.conf
-sudo -i "s/user www-data/#user www-data\nuser nginx/" /etc/nginx/nginx.conf
-sudo -i "s/80/8080/g" /etc/nginx/sites-available/default
+sudo sed -i "s/user www-data/#user www-data\nuser nginx/" /etc/nginx/nginx.conf
+sudo sed -i "s/80/8080/g" /etc/nginx/sites-available/default
 sudo -u nginx service nginx start
