@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 #user nginex
-new_config="user nginx"
-sudo sed -i "1i $new_config" /etc/nginx/nginx.conf
+pkill apache2
+chmod 744 /etc/nginx/nginx.conf
+
+#change root
+sed -i "s/user www-data/#user www-data\nuser nginx/" /etc/nginx/nginx.conf
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+sudo -u nginx service nginx start
