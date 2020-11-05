@@ -17,6 +17,6 @@ if __name__ == "__main__":
     with open('{}.csv'.format(user_id), mode='w', newline="") as f:
         progress_writer = csv.writer(f, quoting=csv.QUOTE_ALL)
 
-        for t in todos_list:
+        for i in todos_list:
             progress_writer.writerow([int(user_id), user.get('username'),
                                       i.get('completed'), i.get('title')])
