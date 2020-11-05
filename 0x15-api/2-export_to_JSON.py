@@ -16,7 +16,7 @@ if __name__ == "__main__":
 
     with open('{}.json'.format(user_id), 'w') as x:
         json.dump({user_id: [{
-                "y": y.get("title"),
+                "task": y.get("title"),
                 "completed": y.get("completed"),
                 "username": y.get("username")
             } for y in todos_list]}, x)
