@@ -8,7 +8,7 @@ import requests
 import sys
 
 if __name__ == "__main__":
-    Myurl = "https://jsonplaceholder.typicode.com/"
+    url = "https://jsonplaceholder.typicode.com/"
 
     user_id = requests.get(url + "users/{}".format(sys.argv[1])).json()
     todos_list = requests.get(url + "todos",
