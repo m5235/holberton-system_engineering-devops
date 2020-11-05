@@ -9,8 +9,7 @@ def top_ten(subreddit):
     """ prints the titles of the first 10 hot posts
     """
     main_url = "https://www.reddit.com"
-    headers = {
- "User-Agent": "chrome api (by /u/Cyber)"}
+    headers = {"User-Agent": "chrome api "}
     request_info = requests.get(
         main_url + '/r/{}/hot.json?limit=10'.format(subreddit),
         headers=headers,
