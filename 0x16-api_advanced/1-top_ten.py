@@ -10,7 +10,7 @@ def top_ten(subreddit):
     """
     main_url = "https://www.reddit.com"
     headers = {
-        "User-Agent": "Ubuntu:API (by /u/Cyber)"}
+ "User-Agent": "chrome api (by /u/Cyber)"}
     request_info = requests.get(
         main_url + '/r/{}/hot.json?limit=10'.format(subreddit),
         headers=headers,
